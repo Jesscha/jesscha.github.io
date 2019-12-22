@@ -67,7 +67,7 @@ header a:hover{
 }
 
 .img2-position{
-     margin-top: -160px;
+    margin-top: -160px;
     margin-right: 30px;
 
 }
@@ -124,12 +124,29 @@ section a:hover{
 section a{
     color: rgba(0,0,0,0.4);
     text-decoration: none;
+}
 
+.photoselection input{
+    display: none;
+}
+
+.photoselection label{
+    cursor: pointer;
 }
 
 
+
+input:checked+label{
+
+    transition: all;
+    transition-duration: 500ms;
+    color: rgba(66,164,153,0.4);
+}
+
+
+
 .img-repre-grid{
-     display: grid;
+    display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     margin-left: 150px;
     margin-right: 150px;
@@ -182,7 +199,9 @@ section a{
 
 [class^=img-repre-position]{
     border-radius: 4px;
-   box-shadow: 10px 5px 10px rgba(0,0,0,0.1);
+    transition: all;
+    transition-duration: 1000ms;
+    box-shadow: 10px 5px 10px rgba(0,0,0,0.1);
 }
 
 
