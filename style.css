@@ -45,16 +45,15 @@
 .section__shortImg {
   margin-top: -35px;
   height: 250px;
-  margin-right: 30px;
+  margin-left: -80px;
   border-radius: 5px 5px;
   box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.2); }
 .section__longImg {
   margin-top: -185px;
+  margin-left: 20px;
   height: 400px;
   border-radius: 5px 5px;
   box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.2); }
-.section__imgGroup {
-  height: 1000px; }
 .section__imgSelection {
   list-style: none;
   margin: 0;
@@ -93,9 +92,9 @@
   transition-duration: 1000ms;
   box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.2); }
   .section__imgDisplay--moveToRight {
-    margin-left: 210px; }
+    margin-left: 193px; }
   .section__imgDisplay--moveToLeft {
-    margin-left: -70px; }
+    margin-left: -80px; }
   .section__imgDisplay--moveToTop {
     margin-top: -270px; }
   .section__imgDisplay--small {
@@ -107,18 +106,19 @@
   .section__imgDisplay--small4 {
     width: 345px; }
   .section__imgDisplay--small5 {
-    width: 350px; }
+    width: 345px; }
   .section__imgDisplay--large {
-    width: 710px;
+    width: 697px;
     height: 550px; }
   .section__imgDisplay--middle {
     width: 375px;
     height: 550px; }
   .section__imgDisplay--middle2 {
-    width: 350px;
+    width: 345px;
     height: 550px; }
   .section__imgDisplay--middle3 {
-    width: 500px; }
+    height: 300px;
+    width: 480px; }
   .section__imgDisplay:hover {
     transition: all;
     transition-duration: 1000ms;

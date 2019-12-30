@@ -69,18 +69,19 @@
   &__shortImg{
     margin-top: -35px;
     height: 250px;
-    margin-right: 30px;
+    margin-left: -80px;
     border-radius: 5px 5px;
     box-shadow: 10px 5px 10px rgba(0,0,0,0.2);
   }
   &__longImg{
     margin-top: -185px;
+    margin-left: 20px;
     height: 400px;
     border-radius: 5px 5px;
     box-shadow: 10px 5px 10px rgba(0,0,0,0.2);
   }
   &__imgGroup{
-    height: 1000px;
+    //height: 1000px;
   }
   &__imgSelection{
     list-style:none;
@@ -132,10 +133,10 @@
     transition-duration: 1000ms;
     box-shadow: 10px 5px 10px rgba(0,0,0,0.2);
     &--moveToRight{
-      margin-left: 210px;
+      margin-left: 193px;
     }
     &--moveToLeft{
-      margin-left: -70px;
+      margin-left: -80px;
     }
     &--moveToTop{
       margin-top: -270px;
@@ -153,11 +154,11 @@
       width: 345px;
     }
     &--small5{
-      width: 350px;
+      width: 345px;
     }
 
     &--large{
-      width: 710px;
+      width: 697px;
       height: 550px;
     }
     &--middle{
@@ -166,12 +167,14 @@
     }
 
     &--middle2{
-      width: 350px;
+
+      width: 345px;
       height: 550px;
     }
 
     &--middle3{
-      width: 500px;
+      height: 300px;
+      width: 480px;
 
     }
 
@@ -233,7 +236,7 @@
     float: left;
   }
 
- &__link{
+  &__link{
     color: white;
     text-decoration: none;
 
