@@ -11,6 +11,16 @@ const repreHandler = () =>{
     document.getElementById('livingRoomImgSet').setAttribute('style', "display:none");
     document.getElementById('kitchenImgSet').setAttribute('style', "display:none");
     document.getElementById('seminarLoofImgSet').setAttribute('style', "display:none");
+
+    document.getElementById('carousel-repre').setAttribute('style', "display:block");
+    document.getElementById('carousel-living').setAttribute('style', "display:none");
+    document.getElementById('carousel-kitchen').setAttribute('style', "display:none");
+    document.getElementById('carousel-semiloof').setAttribute('style', "display:none");
+
+
+
+
+
 };
 repre.addEventListener("click", repreHandler)
 
@@ -21,6 +31,14 @@ const livingHandler = () =>{
     document.getElementById('livingRoomImgSet').setAttribute('style', "display:grid");
     document.getElementById('kitchenImgSet').setAttribute('style', "display:none");
     document.getElementById('seminarLoofImgSet').setAttribute('style', "display:none");
+
+    document.getElementById('carousel-repre').setAttribute('style', "display:none");
+    document.getElementById('carousel-living').setAttribute('style', "display:block");
+    document.getElementById('carousel-kitchen').setAttribute('style', "display:none");
+    document.getElementById('carousel-semiloof').setAttribute('style', "display:none");
+
+
+
 };
 living.addEventListener("click", livingHandler)
 
@@ -32,6 +50,15 @@ const kitchenHandler = () =>{
     document.getElementById('livingRoomImgSet').setAttribute('style', "display:none");
     document.getElementById('kitchenImgSet').setAttribute('style', "display:grid");
     document.getElementById('seminarLoofImgSet').setAttribute('style', "display:none");
+
+    document.getElementById('carousel-repre').setAttribute('style', "display:none");
+    document.getElementById('carousel-living').setAttribute('style', "display:none");
+    document.getElementById('carousel-kitchen').setAttribute('style', "display:block");
+    document.getElementById('carousel-semiloof').setAttribute('style', "display:none");
+
+
+
+
 };
 kitchen.addEventListener("click", kitchenHandler)
 
@@ -43,6 +70,12 @@ const semiloofHandler = () =>{
     document.getElementById('livingRoomImgSet').setAttribute('style', "display:none");
     document.getElementById('kitchenImgSet').setAttribute('style', "display:none");
     document.getElementById('seminarLoofImgSet').setAttribute('style', "display:grid");
+
+    document.getElementById('carousel-repre').setAttribute('style', "display:none");
+    document.getElementById('carousel-living').setAttribute('style', "display:none");
+    document.getElementById('carousel-kitchen').setAttribute('style', "display:none");
+    document.getElementById('carousel-semiloof').setAttribute('style', "display:block");
+
 };
 semiloof.addEventListener("click", semiloofHandler)
 

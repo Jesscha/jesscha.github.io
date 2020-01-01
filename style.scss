@@ -2,15 +2,25 @@
   font-family: 'Song Myung', serif;
 }
 
+$small-breakpoint: 430px;
+$medium-breakpoint: 768px;
+$large-breakpoint: 1024px;
+
 .header{
+  display: block;
   position: relative;
   background-image: url("https://lh3.googleusercontent.com/TfPMYUUt3Q5mEKK9sD_cZknlXPjzirdIsXdgSZZxqZv3Dnp2K7DimvfLvrK-n5uNxxMqlAGTc4utSfXMTJ064OLI5n89cm0IAo0WQ6vXdg2FTULOw0JefGWQV55X7uKYJL8xmGUYuoAuvW1NWds0N-tGjrHHEYFSvQUmYGPoSak-1UQoBCXfKp5dQiKKl3qJlYYP3wGTGq1gn1DZ4Yyzc-zU097rVFrQLVREg0iqCXXJzAi5l83_vri5_HNG6Al41_nwaV__-rk-upN7ds4avkLvj3B5jT1QRjs_cURBXw68Ne94omYhkFy_ue2gSrlyugvko1ksf_Y3Iu6-966zAjJiCUhuusBfxCAojVP4jYRCYsfpN-wJh3S6PhpcYFjwCLN_Iy3akXY6-P9Ful2jFdH_EGI1e-nEboDuveNDZnOR6BJBuP6HtZT_C9zwjWIgW2R7U6hfiH1AAChtDJzdbnOynEU0rBcGPska1Ge7_6mTr73bFHrZOm2WJOIyJmxU_zlvE_KjnJp4fGlLZAS7QjWy45JDzlaPq4-ecKeDxsIfXdk83rWHXS0_VGPF75lpLYQ4osTzQqvjk5lPzOQKI8xHX3MsOSsDZ5qPGt6hTaiyBHDKqB_9infinq5Asvvii_sXzg_URMJs1q2x7U20zaaok1wLdsczBrLEOyP8NLrd9CMcSwMBy95-7QX03wqEzdIzFvgjc5-o1AAh3TNApEZ__6V202_omH_Z7XqBsQhoztZx=w2300-h1532-no");
   background-size: cover;
-  height: 800px;
+  height: 600px;
+
+
+  &__navButtons--sm{
+    display: none;
+  }
 
   &__background{
     background-color: rgba(0,0,0,0.7);
-    height: 800px;
+    height: 600px;
   }
 
   &__navButtons{
@@ -24,23 +34,14 @@
     margin: 0 0 0 0;
     padding: 0 0 0 0;
     border : 0;
-    float: left;
-  }
-
-  &__textBackground{
-    background-color: rgba(66,164,153,0.4);
-    color: white;
-    position: absolute;
-    right: 40px;
-    bottom: 250px;
-    padding: 20px;
   }
 
   &__text{
-    font-size: 40px;
+    font-size: 25px;
   }
 
   &__link{
+    font-size: 14px;
     color: white;
     text-decoration: none;
 
@@ -51,21 +52,134 @@
       text-decoration: none;
     }
   }
+
+  &__textBackground{
+    background-color: rgba(66,164,153,0.4);
+    color: white;
+    position: absolute;
+    right: 40px;
+    padding: 20px;
+    top:150px;
+  }
+
+
+
+
+
+  @media screen and (min-width: $small-breakpoint){
+    height: 800px;
+
+    &__background{
+      background-color: rgba(0,0,0,0.7);
+      height: 800px;
+    }
+
+    &__navButtons--sm{
+      display: block;
+    }
+
+    &__navButtons{
+      list-style:none;
+      margin:0;
+      padding:0;
+      color: white;
+    }
+
+    &__buttons{
+      margin: 0 0 0 0;
+      padding: 0 0 0 0;
+      border : 0;
+      float: left;
+    }
+
+    &__text{
+      font-size: 40px;
+    }
+
+    &__link{
+      color: white;
+      text-decoration: none;
+
+      &:hover{
+        color:rgba(66,164,153,0.4);
+        transition: all;
+        transition-duration: 500ms;
+        text-decoration: none;
+      }
+    }
+    &__textBackground{
+      background-color: rgba(66,164,153,0.4);
+      color: white;
+      position: absolute;
+      right: 40px;
+      bottom: 250px;
+      padding: 20px;
+      top:auto;
+    }
+
+
+  }
+
+
+
+
 }
 
 .section{
+  &__text{
+    font-size: 15px;
+
+     color: rgba(0, 0, 0, 0.4);
+  }
+
+
+  &__nodisplay--sm{
+    display: none;
+  }
+
+  &__nodisplay--lg{
+    display: block;
+  }
+
+
+
+
+  &__shortImg--mob{
+    width: 100vw;
+
+
+  }
+
+
+
+  @media screen and (min-width: $small-breakpoint){
+    &__nodisplay--sm{
+      display: block;
+    }
+    &__nodisplay--lg{
+      display: none;
+    }
+
+    &__textBackground{
+    background-color: rgba(0,0,0,0)
+  }
+
+
+    &__textarea{
+      background-image: none;
+      height: auto;
+
+
+    }
+
+    &__imgWrapper{
+      display: flex;
+      justify-content: flex-end;
+    }
 
   &__text{
-    &--gray{
       color: rgba(0,0,0,0.4);
-    }
   }
-
-  &__imgWrapper{
-    display: flex;
-    justify-content: flex-end;
-  }
-
   &__shortImg{
     margin-top: -35px;
     height: 250px;
@@ -80,6 +194,22 @@
     border-radius: 5px 5px;
     box-shadow: 10px 5px 10px rgba(0,0,0,0.2);
   }
+    &__shortImg--mob{
+    width: auto;
+  }
+
+    &__imgBackground{
+    background-color: rgba(0,0,0,0.1);
+
+  }
+
+
+  }
+
+
+
+
+
   &__imgGroup{
     //height: 1000px;
   }
@@ -107,10 +237,7 @@
     }
   }
 
-  &__imgBackground{
-    background-color: rgba(0,0,0,0.1);
 
-  }
 
   &__imgGrid3Col{
     display: grid;
@@ -130,7 +257,7 @@
     height: 350px;
     border-radius: 5px 5px;
     transition: all;
-    transition-duration: 1000ms;
+    transition-duration: 500ms;
     box-shadow: 10px 5px 10px rgba(0,0,0,0.2);
     &--moveToRight{
       margin-left: 193px;
@@ -181,8 +308,8 @@
 
     &:hover{
       transition: all;
-      transition-duration: 1000ms;
-      transform: scale(1.1);
+      transition-duration: 500ms;
+      transform: scale(1.05);
       box-shadow: 10px 5px 50px rgba(0,0,0,0.2);
       z-index: 10000;
     }
@@ -194,7 +321,7 @@
   }
 
   &__contactWrapper{
-    width: 640px;
+    width: 100vw;
 
   }
 
