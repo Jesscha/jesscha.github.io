@@ -6,6 +6,17 @@ $small-breakpoint: 430px;
 $medium-breakpoint: 768px;
 $large-breakpoint: 1024px;
 
+
+
+@media screen and (min-width: $small-breakpoint){
+  body{
+    width:1440px;
+  }
+
+}
+
+
+
 .header{
   display: block;
   position: relative;
@@ -321,7 +332,7 @@ $large-breakpoint: 1024px;
   }
 
   &__contactWrapper{
-    width: 100vw;
+    width: 100%;
 
   }
 
