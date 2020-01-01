@@ -48,7 +48,7 @@ $large-breakpoint: 1024px;
   }
 
   &__text{
-    font-size: 25px;
+    font-size: 23px;
   }
 
   &__link{
@@ -88,6 +88,10 @@ $large-breakpoint: 1024px;
     &__navButtons--sm{
       display: block;
     }
+
+    &__text{
+    font-size: 25px;
+  }
 
     &__navButtons{
       list-style:none;
